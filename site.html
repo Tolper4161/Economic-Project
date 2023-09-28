@@ -1,30 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Залупа Иваныча</title>
+    <title>Проект</title>
 </head>
 <body>
-<form enctype="multipart/form-data" method="post">
-    <input type="file" id="imageInput" accept="image/*">
-<button id="checkButton">Проверить изображение</button>
 
-<script>
-  document.getElementById("checkButton").addEventListener("click", function() {
-    const fileInput = document.getElementById("imageInput");
-    const selectedFile = fileInput.files[0];
+    <form enctype="multipart/form-data" method="post">
+        <div id="drop-zone" class="drop-zone">
+        Перетащите изображения сюда.
+        </div>
+        <div id="file-list">
 
-    if (selectedFile) {
-      if (selectedFile.type.startsWith("image/")) {
-        alert("Файл является изображением.");
-      } else {
-        alert("Выбранный файл не является изображением.");
-      }
-    } else {
-      alert("Пользователь не выбрал файл.");
-    }
-  });
-</script>
+        </div>
+        <button id="reset-button">Сброс</button>
+        <script src="js/script.js"></script>
 </form>
 </body>
 </html>
