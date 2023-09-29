@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Проект</title>
+    <link rel="stylesheet" type="text/css" href="css/HumburgerMenu.css">
+
 </head>
 <body>
-
-    <form enctype="multipart/form-data" method="post">
-        <div id="drop-zone" class="drop-zone">
+<form enctype="multipart/form-data" method="post">
+    <div id="drop-zone" class="drop-zone">
         Перетащите изображения сюда.
-        </div>
-        <div id="file-list">
+    </div>
+    <div id="file-list">
 
-        </div>
-        <button id="reset-button">Сброс</button>
-        <script src="js/script.js"></script>
+    </div>
+    <button id="reset-button">Сброс</button>
+    <script src="js/script.js"></script>
 </form>
+<label>
+    <input type="checkbox">
+    <span class="menu"> <span class="hamburger"></span> </span>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</label>
 </body>
 </html>
