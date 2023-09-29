@@ -15,16 +15,31 @@
 
     </div>
     <button id="reset-button">Сброс</button>
+    <label for="compression-ratio">Степень сжатия</label>
+    <select name="compression-ratio" id="compression-ratio" disabled>
+        <optgroup>
+            <option value="r1">1</option>
+            <option value="r2">2</option>
+            <option value="r3">3</option>
+            <option value="r4">4</option>
+        </optgroup>
+    </select>
+    <input type="checkbox" id="CBAutoStepen" name="CBAutoStepen" value="CBAutoStepen" checked>
+    <input type="checkbox" id="CBSmallerQualityImage" name="CBSmallerQualityImage" value="CBSmallerQualityImage"
+           checked><label for="CBSmallerQualityImage">Уменьшать разрешение изображения</label>
+    <input  type="checkbox" id="CBAddrtf" name="CBAddrtf" value="CBAddrtf" checked>
+
+    <label>
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </label>
     <script src="js/script.js"></script>
 </form>
-<label>
-    <input type="checkbox">
-    <span class="menu"> <span class="hamburger"></span> </span>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</label>
+
 </body>
 </html>
