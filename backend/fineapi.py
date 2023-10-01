@@ -196,7 +196,7 @@ class FineReader:
 
 async def main():
     ca = FineReader()
-    data = open('img.png', 'rb').read()
+    data = open('../img.png', 'rb').read()
     await ca.processImage(data, add_rft=True)
 
 

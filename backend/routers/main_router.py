@@ -2,7 +2,7 @@ from typing import Annotated
 from fastapi import APIRouter, UploadFile, Form
 from starlette.responses import Response, JSONResponse
 
-from fineapi import FineReader, NoText
+from backend.fineapi import FineReader, NoText
 
 router = APIRouter()
 
