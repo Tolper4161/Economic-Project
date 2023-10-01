@@ -110,6 +110,8 @@ button::before {
 }
 .animated-button:hover.animated-button::before, .animated-button:disabled.animated-button:disabled::before {
     background: transparent;
+}
+.animated-button:disabled.animated-button:disabled::before {
     cursor: auto;
 }
 .animated-button:hover.animated-button, .animated-button:disabled.animated-button:disabled {
@@ -192,9 +194,9 @@ input[type=checkbox]:not(:disabled):active+label::before {
     display: inline-block;
     position: absolute;
     left: 0px;
-    transform: translateX(-8.5%);
+    transform: translateX(-2%);
     bottom: 0px;
-    width: 120%;
+    width: 105%;
     height: 3px;
     background: white;
 }
@@ -514,7 +516,7 @@ input[type=checkbox]:checked+label::before, input[type=checkbox]+label::before {
     max-width: 250px;
     max-height: 250px;
     margin: 30px;
-    background: url(../template/img/img.png);
+    background: url(../template/img/demotivator.png);
     background-size: cover;
 }
 .line-img::before, .line-img::after{
